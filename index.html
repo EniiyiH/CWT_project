@@ -1,377 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/logo3.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo3.png" type="image/x-icon" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
     <title>CWT</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-wrapper">
-            <div class="logo">
-                <img src="./images/logo3.png" alt="">
+      <div class="header-wrapper">
+        <div class="logo">
+          <img src="./images/logo3.png" alt="" />
+        </div>
+        <div class="menus">
+          <a href="#">Home</a>
+          <a href="#programs">Workouts</a>
+          <div class="dropdown">
+            <a href="#community" class="drop-btn">Community ▾</a>
+            <div class="dropdown-content">
+              <a href="#weekly">Weekly Challenges</a>
+              <a href="#leaderboards">Leaderboards</a>
             </div>
-            <div class="menus">
-                <a href="#">Home</a>
-                <a href="#programs">Workouts</a>
-                <div class="dropdown">
+          </div>
+          <a href="#">Shop merch</a>
+          <a href="#contact">Get started</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="46"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="none"
+              stroke="#2e525a"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
+            />
+          </svg>
+        </div>
+
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li>
+              <div class="dropdown">
                 <a href="#community" class="drop-btn">Community ▾</a>
                 <div class="dropdown-content">
                   <a href="#weekly">Weekly Challenges</a>
                   <a href="#leaderboards">Leaderboards</a>
                 </div>
-                </div>
-                <a href="#">Shop merch</a>
-                 <a href="#contact">Get started</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-               <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 16 16"><path fill="none" stroke="#2e525a" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"/></svg>
-            </div>
-
-            <nav id="nav-menu" class="nav-menu"> 
-                <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li>
-                <div class="dropdown">
-                <a href="#community" class="drop-btn">Community ▾</a>
-                <div class="dropdown-content">
-                  <a href="#weekly">Weekly Challenges</a>
-                  <a href="#leaderboards">Leaderboards</a>
-                </div>
-                </div>
-                </li>
-                <li><a href="#">Shop merch</a></li>
-                <li><a href="#contact">Get Started</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>s
-    <main>
-        <section class="hero">
-             <video autoplay muted loop playsinline> 
-            <source src="./videos/gym.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video>
-
-            <div class="overlay"></div>
-
-            <div class="hero-content">
-            <h1>Become Regenerated</h1>
-            <h2>Transform Your Body, Transform Your Life</h2>
-            <p>A fitness initiative that emphasizes longetivity, skill, and functional ability.</p>
-            <button class="btn btn-primary">Join Now</button>
-            </div>
-      </section>
-   <div class="programs-section">
-<h2 class="section-title">Our Programs</h2>
-<p class="section-subtitle">Transform your body with our expert-designed fitness programs</p>
-
-<div class="carousel-container">
-<div class="carousel">
-<div class="carousel-track" id="carouselTrack">
-<!-- Program 1 -->
-<div class="program-card">
-<div class="program-image">
-<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop" alt="Strength Training">
-</div>
-<div class="program-content">
-<h3 class="program-title">Strength Training</h3>
-<p class="program-description">
-    Build lean muscle mass and increase your strength with our comprehensive weight training program. Perfect for all fitness levels.
-</p>
-<div class="program-details">
-    <div class="detail-item">
-        <div class="detail-label">Duration</div>
-        <div class="detail-value">45 min</div>
-    </div>
-    <div class="detail-item">
-        <div class="detail-label">Level</div>
-        <div class="detail-value">All Levels</div>
-    </div>
-    <div class="detail-item">
-        <div class="detail-label">Sessions</div>
-        <div class="detail-value">3x/week</div>
-    </div>
-</div>
-<button class="cta-button">Join Now</button>
-</div>
-</div>
-
-<!-- Program 2 -->
-<div class="program-card">
-<div class="program-image">
-<img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop" alt="HIIT Training">
-</div>
-<div class="program-content">
-<h3 class="program-title">HIIT Training</h3>
-<p class="program-description">
-    High-intensity interval training to burn calories fast and improve cardiovascular fitness. Get results in less time.
-</p>
-<div class="program-details">
-    <div class="detail-item">
-        <div class="detail-label">Duration</div>
-        <div class="detail-value">30 min</div>
-    </div>
-    <div class="detail-item">
-        <div class="detail-label">Level</div>
-        <div class="detail-value">Intermediate</div>
-    </div>
-    <div class="detail-item">
-        <div class="detail-label">Sessions</div>
-        <div class="detail-value">4x/week</div>
-    </div>
-</div>
-<button class="cta-button">Join Now</button>
-</div>
-</div>
-
-<!-- Program 3 -->
-<div class="program-card">
-<div class="program-image">
-<img src="https://images.unsplash.com/photo-1506629905607-c52b4de06fb5?w=600&h=400&fit=crop" alt="Yoga & Flexibility">
-</div>
-<div class="program-content">
-<h3 class="program-title">Yoga & Flexibility</h3>
-<p class="program-description">
-    Improve flexibility, balance, and mental wellness through guided yoga sessions and mobility work.
-</p>
-<div class="program-details">
-    <div class="detail-item">
-        <div class="detail-label">Duration</div>
-        <div class="detail-value">60 min</div>
-    </div>
-    <div class="detail-item">
-        <div class="detail-label">Level</div>
-        <div class="detail-value">Beginner</div>
-    </div>
-    <div class="detail-item">
-        <div class="detail-label">Sessions</div>
-        <div class="detail-value">2x/week</div>
-    </div>
-</div>
-<button class="cta-button">Join Now</button>
-</div>
-</div>
-
-<!-- Program 4 -->
-<div class="program-card">
-<div class="program-image">
-<img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=600&h=400&fit=crop" alt="Group Fitness">
-</div>
-<div class="program-content">
-<h3 class="program-title">Group Fitness</h3>
-<p class="program-description">
-    Join energetic group classes including Zumba, Spin, and Bootcamp. Stay motivated with community support.
-</p>
-<div class="program-details">
-    <div class="detail-item">
-        <div class="detail-label">Duration</div>
-        <div class="detail-value">50 min</div>
-    </div>
-    <div class="detail-item">
-        <div class="detail-label">Level</div>
-        <div class="detail-value">All Levels</div>
-    </div>
-    <div class="detail-item">
-        <div class="detail-label">Sessions</div>
-        <div class="detail-value">Daily</div>
-    </div>
-</div>
-<button class="cta-button">Join Now</button>
-</div>
-</div>
-</div>
-</div>
-
-<button class="nav-button prev-btn" onclick="prevSlide()">‹</button>
-<button class="nav-button next-btn" onclick="nextSlide()">›</button>
-
-<div class="dots-container" id="dotsContainer"></div>
-</div>
-    </div>
-
-
-    <section class="about" id="about">
-        <img src="./images/logo3.png" alt="Gym Workout">
-        <div class="about-text">
-        <h2>About us</h2>
-        <p>
-           At C.W.T., we believe true fitness goes beyond aesthetics—it's about longevity, 
-          skill, and functional strength rooted in connective tissue health and muscle growth. 
-          Whether you're recovering from joint issues or simply seeking to move through life 
-          with power and ease, our programs are designed to help you thrive
-        </p>
-        <p id="paragraph">We specialize in:</p>
-        <div class="specialization">
-      <h3><span id="typewriter"></span><span class="cursor"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#2e525a" d="M13 19a1 1 0 0 0 1 1h2v2h-2.5c-.55 0-1.5-.45-1.5-1c0 .55-.95 1-1.5 1H8v-2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H8V2h2.5c.55 0 1.5.45 1.5 1c0-.55.95-1 1.5-1H16v2h-2a1 1 0 0 0-1 1z"/></svg></span></h3>
-    </div>
-
-        <p>
-          Our foundation is Christian, Tried, and True, guided by the belief that caring for 
-          the body is part of spiritual stewardship (see 3 John 2). While our values are faith-based, 
-          our doors are open to anyone seeking freedom of movement and a healthier life.
-        </p>
-        <a href="#" class="btn">Learn More</a>
-        </div>
-  </section>
-
-  <!-- About the CEO Section -->
-<section class="ceo-section">
-  <div class="ceo-overlay">
-    <div class="ceo-content">
-      <img src="./images/ceo.jpg" alt="CEO of Christians Workout Too" class="ceo-img">
-      <h2>Meet Our Founder</h2>
-      <h3>Elugbaju Olatide</h3>
-      <p>
-       Olatide is an athlete with 5+ years experience. He specializes in corrective rehabilitation, functional strength( through kettlebells and calisthenics), and body recomposition. He aims to get every client to their goals and maximize quality of life. When he is not coaching, he works as a registered nurse, continuing to fulfill his passion: collaborating with people for their health and wellbeing.
-      </p>
-      <blockquote>
-        "Your body is the temple of the Holy Spirit — let’s keep it strong for God’s purpose."
-      </blockquote>
-    </div>
-  </div>
-</section>
-
-   <section class="testimonial-section">
-    <h2 class="testimonial-title">What Our Members Say</h2>
-    <div class="testimonial-wrapper">
-      <div class="testimonial-container" id="testimonial-track">
-        
-        <!-- Testimonial Card -->
-        <div class="testimonial">
-          <div class="before-after">
-            <img src="https://via.placeholder.com/150x140?text=Before" alt="Before">
-            <img src="https://via.placeholder.com/150x140?text=After" alt="After">
-          </div>
-          <p>“Joining Christians Workout Too has completely transformed my health and faith journey.”</p>
-          <div class="author">– Sarah M.</div>
-        </div>
-
-        <div class="testimonial">
-          <div class="before-after">
-            <img src="https://via.placeholder.com/150x140?text=Before" alt="Before">
-            <img src="https://via.placeholder.com/150x140?text=After" alt="After">
-          </div>
-          <p>“The trainers not only build my strength but encourage me spiritually. I love it here!”</p>
-          <div class="author">– John D.</div>
-        </div>
-
-        <div class="testimonial">
-          <div class="before-after">
-            <img src="https://via.placeholder.com/150x140?text=Before" alt="Before">
-            <img src="https://via.placeholder.com/150x140?text=After" alt="After">
-          </div>
-          <p>“A perfect balance of fitness and faith. Highly recommend to every believer.”</p>
-          <div class="author">– Grace A.</div>
-        </div>
-
-        <div class="testimonial">
-          <div class="before-after">
-            <img src="https://via.placeholder.com/150x140?text=Before" alt="Before">
-            <img src="https://via.placeholder.com/150x140?text=After" alt="After">
-          </div>
-          <p>“The community is so supportive. I’ve grown stronger inside and out.”</p>
-          <div class="author">– Daniel K.</div>
-        </div>
-
-        <!-- Duplicate for infinite scroll -->
-        <div class="testimonial">
-          <div class="before-after">
-            <img src="https://via.placeholder.com/150x140?text=Before" alt="Before">
-            <img src="https://via.placeholder.com/150x140?text=After" alt="After">
-          </div>
-          <p>“Joining Christians Workout Too has completely transformed my health and faith journey.”</p>
-          <div class="author">– Sarah M.</div>
-        </div>
-
-        <div class="testimonial">
-          <div class="before-after">
-            <img src="https://via.placeholder.com/150x140?text=Before" alt="Before">
-            <img src="https://via.placeholder.com/150x140?text=After" alt="After">
-          </div>
-          <p>“The trainers not only build my strength but encourage me spiritually. I love it here!”</p>
-          <div class="author">– John D.</div>
-        </div>
-
-        <div class="testimonial">
-          <div class="before-after">
-            <img src="https://via.placeholder.com/150x140?text=Before" alt="Before">
-            <img src="https://via.placeholder.com/150x140?text=After" alt="After">
-          </div>
-          <p>“A perfect balance of fitness and faith. Highly recommend to every believer.”</p>
-          <div class="author">– Grace A.</div>
-        </div>
-
-        <div class="testimonial">
-          <div class="before-after">
-            <img src="https://via.placeholder.com/150x140?text=Before" alt="Before">
-            <img src="https://via.placeholder.com/150x140?text=After" alt="After">
-          </div>
-          <p>“The community is so supportive. I’ve grown stronger inside and out.”</p>
-          <div class="author">– Daniel K.</div>
-        </div>
-
+              </div>
+            </li>
+            <li><a href="#">Shop merch</a></li>
+            <li><a href="#contact">Get Started</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </section>
+    </header>
+    s
+    <main>
+      <section class="hero">
+        <video autoplay muted loop playsinline>
+          <source src="./videos/gym.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  <!-- form section -->
-<section class="get-started" id="contact">
-  <h2>Get Started with Christians Workout Too</h2>
-  <p>Fill out the form and join our faith-driven fitness community.</p>
+        <div class="overlay"></div>
 
-  <form action="https://formspree.io/f/xovloqzo" method="POST" class="get-started-form">
-    <div class="form-group">
-      <label for="firstname">First Name</label>
-      <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
-    </div>
+        <div class="hero-content">
+          <h1>Become Regenerated</h1>
+          <h2>Transform Your Body, Transform Your Life</h2>
+          <p>
+            A fitness initiative that emphasizes longetivity, skill, and
+            functional ability.
+          </p>
+          <button class="btn btn-primary">Join Now</button>
+        </div>
+      </section>
+      <section class="programs-preview">
+        <h2 class="section-title">Here is what we do</h2>
 
-    <div class="form-group">
-      <label for="surname">Surname</label>
-      <input type="text" id="surname" name="surname" placeholder="Enter your surname" required>
-    </div>
+        <div class="programs-container">
+          <div class="program-card">
+            <img src="images/exercise.jpg" alt="Strength in Movement" />
+            <div class="program-content">
+              <h3>Strength in Movement</h3>
+              <p>
+                Exercise + Skill — build strength, stability, and control
+                through guided training sessions.
+              </p>
+              <span class="coming-soon">Coming Soon...</span>
+            </div>
+          </div>
 
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email" required>
-    </div>
+          <div class="program-card">
+            <img src="images/exercise3.jpg" alt="Reshaping Your Identity" />
+            <div class="program-content">
+              <h3>Reshaping Your Identity</h3>
+              <p>
+                Exercise + Nutrition — transform your body and mind through
+                holistic fitness and diet guidance.
+              </p>
+              <span class="coming-soon">Coming Soon...</span>
+            </div>
+          </div>
 
-    <div class="form-group">
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
-    </div>
+          <div class="program-card">
+            <img src="images/rehab.jpg" alt="Regenerating Movement" />
+            <div class="program-content">
+              <h3>Regenerating Movement</h3>
+              <p>
+                Mobility + Rehab — restore movement, prevent injuries, and
+                enhance functional flexibility.
+              </p>
+              <span class="coming-soon">Coming Soon...</span>
+            </div>
+          </div>
+        </div>
 
-    <!-- Add hidden input for better spam protection -->
-    <input type="hidden" name="_subject" value="New message from Christians Workout Too website">
+        <button class="cta-btn">Explore All Programs</button>
+      </section>
 
-    <button type="submit" class="btn-submit">Get Started</button>
-  </form>
-</section>
+      <section class="about" id="about">
+        <img src="./images/logo3.png" alt="Gym Workout" />
+        <div class="about-text">
+          <h2>About us</h2>
+          <p>
+            At C.W.T., we believe true fitness goes beyond aesthetics—it's about
+            longevity, skill, and functional strength rooted in connective
+            tissue health and muscle growth. Whether you're recovering from
+            joint issues or simply seeking to move through life with power and
+            ease, our programs are designed to help you thrive
+          </p>
+          <p id="paragraph">We specialize in:</p>
+          <div class="specialization">
+            <h3>
+              <span id="typewriter"></span
+              ><span class="cursor"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#2e525a"
+                    d="M13 19a1 1 0 0 0 1 1h2v2h-2.5c-.55 0-1.5-.45-1.5-1c0 .55-.95 1-1.5 1H8v-2h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H8V2h2.5c.55 0 1.5.45 1.5 1c0-.55.95-1 1.5-1H16v2h-2a1 1 0 0 0-1 1z"
+                  /></svg
+              ></span>
+            </h3>
+          </div>
 
+          <p>
+            Our foundation is Christian, Tried, and True, guided by the belief
+            that caring for the body is part of spiritual stewardship (see 3
+            John 2). While our values are faith-based, our doors are open to
+            anyone seeking freedom of movement and a healthier life.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </section>
+
+      <!-- About the CEO Section -->
+      <section class="ceo-section">
+        <div class="ceo-overlay">
+          <div class="ceo-content">
+            <img
+              src="./images/ceo.jpg"
+              alt="CEO of Christians Workout Too"
+              class="ceo-img"
+            />
+            <h2>Meet Our Founder</h2>
+            <h3>Elugbaju Olatide</h3>
+            <p>
+              Olatide is an athlete with 5+ years experience. He specializes in
+              corrective rehabilitation, functional strength( through
+              kettlebells and calisthenics), and body recomposition. He aims to
+              get every client to their goals and maximize quality of life. When
+              he is not coaching, he works as a registered nurse, continuing to
+              fulfill his passion: collaborating with people for their health
+              and wellbeing.
+            </p>
+            <blockquote>
+              "Your body is the temple of the Holy Spirit — let’s keep it strong
+              for God’s purpose."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <h2 class="testimonial-title">What Our Members Say</h2>
+        <div class="testimonial-wrapper">
+          <div class="testimonial-container" id="testimonial-track">
+            <!-- Testimonial Card -->
+            <div class="testimonial">
+              <div class="before-after">
+                <img
+                  src="https://via.placeholder.com/150x140?text=Before"
+                  alt="Before"
+                />
+                <img
+                  src="https://via.placeholder.com/150x140?text=After"
+                  alt="After"
+                />
+              </div>
+              <p>
+                “Joining Christians Workout Too has completely transformed my
+                health and faith journey.”
+              </p>
+              <div class="author">– Sarah M.</div>
+            </div>
+
+            <div class="testimonial">
+              <div class="before-after">
+                <img
+                  src="https://via.placeholder.com/150x140?text=Before"
+                  alt="Before"
+                />
+                <img
+                  src="https://via.placeholder.com/150x140?text=After"
+                  alt="After"
+                />
+              </div>
+              <p>
+                “The trainers not only build my strength but encourage me
+                spiritually. I love it here!”
+              </p>
+              <div class="author">– John D.</div>
+            </div>
+
+            <div class="testimonial">
+              <div class="before-after">
+                <img
+                  src="https://via.placeholder.com/150x140?text=Before"
+                  alt="Before"
+                />
+                <img
+                  src="https://via.placeholder.com/150x140?text=After"
+                  alt="After"
+                />
+              </div>
+              <p>
+                “A perfect balance of fitness and faith. Highly recommend to
+                every believer.”
+              </p>
+              <div class="author">– Grace A.</div>
+            </div>
+
+            <div class="testimonial">
+              <div class="before-after">
+                <img
+                  src="https://via.placeholder.com/150x140?text=Before"
+                  alt="Before"
+                />
+                <img
+                  src="https://via.placeholder.com/150x140?text=After"
+                  alt="After"
+                />
+              </div>
+              <p>
+                “The community is so supportive. I’ve grown stronger inside and
+                out.”
+              </p>
+              <div class="author">– Daniel K.</div>
+            </div>
+
+            <!-- Duplicate for infinite scroll -->
+            <div class="testimonial">
+              <div class="before-after">
+                <img
+                  src="https://via.placeholder.com/150x140?text=Before"
+                  alt="Before"
+                />
+                <img
+                  src="https://via.placeholder.com/150x140?text=After"
+                  alt="After"
+                />
+              </div>
+              <p>
+                “Joining Christians Workout Too has completely transformed my
+                health and faith journey.”
+              </p>
+              <div class="author">– Sarah M.</div>
+            </div>
+
+            <div class="testimonial">
+              <div class="before-after">
+                <img
+                  src="https://via.placeholder.com/150x140?text=Before"
+                  alt="Before"
+                />
+                <img
+                  src="https://via.placeholder.com/150x140?text=After"
+                  alt="After"
+                />
+              </div>
+              <p>
+                “The trainers not only build my strength but encourage me
+                spiritually. I love it here!”
+              </p>
+              <div class="author">– John D.</div>
+            </div>
+
+            <div class="testimonial">
+              <div class="before-after">
+                <img
+                  src="https://via.placeholder.com/150x140?text=Before"
+                  alt="Before"
+                />
+                <img
+                  src="https://via.placeholder.com/150x140?text=After"
+                  alt="After"
+                />
+              </div>
+              <p>
+                “A perfect balance of fitness and faith. Highly recommend to
+                every believer.”
+              </p>
+              <div class="author">– Grace A.</div>
+            </div>
+
+            <div class="testimonial">
+              <div class="before-after">
+                <img
+                  src="https://via.placeholder.com/150x140?text=Before"
+                  alt="Before"
+                />
+                <img
+                  src="https://via.placeholder.com/150x140?text=After"
+                  alt="After"
+                />
+              </div>
+              <p>
+                “The community is so supportive. I’ve grown stronger inside and
+                out.”
+              </p>
+              <div class="author">– Daniel K.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- form section -->
+      <section class="get-started" id="contact">
+        <h2>Get Started with Christians Workout Too</h2>
+        <p>Fill out the form and join our faith-driven fitness community.</p>
+
+        <form
+          action="https://formspree.io/f/xovloqzo"
+          method="POST"
+          class="get-started-form"
+        >
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="Enter your first name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="surname">Surname</label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Enter your surname"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Add hidden input for better spam protection -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message from Christians Workout Too website"
+          />
+
+          <button type="submit" class="btn-submit">Get Started</button>
+        </form>
+      </section>
     </main>
 
     <!-- footer -->
-     <footer>
-        <div class="footer-wrapper">
-            <div class="logo">
-                <img src="./images/logo3.png" alt="">
-            </div>
-            <div class="text">
-               <p>&copy; Christians workout too.All righs reserved.</p> 
-            </div>
-            <div class="socials">
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="#2D6A4F" d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008"/></svg></a>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="#2D6A4F" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg></a>
-                <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="#2D6A4F" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg></a>
-            </div>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="logo">
+          <img src="./images/logo3.png" alt="" />
         </div>
-     </footer>
-     <script src="app.js"></script>
-</body>
+        <div class="text">
+          <p>&copy; Christians workout too.All righs reserved.</p>
+        </div>
+        <div class="socials">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2D6A4F"
+                d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2D6A4F"
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2D6A4F"
+                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>

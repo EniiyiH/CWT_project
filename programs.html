@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs | Christians Work Out Too</title>
+  <link rel="stylesheet" href="/CSS/programs.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="/IMG/main logo.PNG" alt="Christians Work Out Too">
+      <span class="img-text">Christians Workout Too</span>
+    </div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="programs.html" class="active">Programs</a>
+      <a href="#">Community</a>
+      <a href="#">Get Started</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Explore Our Programs</h1>
+      <p>Train your body, renew your mind, and restore your identity in Christ through movement.</p>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section class="programs">
+    <h2>Our Signature Programs</h2>
+    <div class="program-grid">
+      <div class="program-item" data-program="strength">
+        <h3>Strength in Movement</h3>
+        <p>Exercise + Skill</p>
+      </div>
+      <div class="program-item" data-program="identity">
+        <h3>Reshaping Your Identity</h3>
+        <p>Exercise + Nutrition</p>
+      </div>
+      <div class="program-item coming-soon" data-program="regen">
+        <h3>Regenerating Movement</h3>
+        <p>Mobility + Rehab<br><em>Coming Soon...</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="program-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+      <a href="#" class="btn-primary">Learn More</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 BRG. All rights reserved.</p>
+  </footer>
+
+  <script src="/JS/programs.js"></script>
+</body>
+</html>
