@@ -1,71 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programs | Christians Work Out Too</title>
-  <link rel="stylesheet" href="/CSS/programs.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="/IMG/main logo.PNG" alt="Christians Work Out Too">
-      <span class="img-text">Christians Workout Too</span>
-    </div>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="hamburger">
-      <span></span><span></span><span></span>
-    </label>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="programs.html" class="active">Programs</a>
-      <a href="#">Community</a>
-      <a href="#">Get Started</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/logo3.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="programs.css">
+    <title>CWT</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="logo">
+          <img src="./images/logo3.png" alt="" />
+        </div>
+        <div class="menus">
+          <a href="./index.html">Home</a>
+          <a href="#programs">Workouts</a>
+          <div class="dropdown">
+            <a href="#community" class="drop-btn">Community ▾</a>
+            <div class="dropdown-content">
+              <a href="#weekly">Weekly Challenges</a>
+              <a href="#leaderboards">Leaderboards</a>
+            </div>
+          </div>
+          <a href="#">Shop merch</a>
+          <a href="#contact">Get started</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="46"
+            height="46"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill="none"
+              stroke="#2e525a"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5"
+            />
+          </svg>
+        </div>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Explore Our Programs</h1>
-      <p>Train your body, renew your mind, and restore your identity in Christ through movement.</p>
-    </div>
-  </section>
+        <nav id="nav-menu" class="nav-menu">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li>
+              <div class="dropdown">
+                <a href="#community" class="drop-btn">Community ▾</a>
+                <div class="dropdown-content">
+                  <a href="#weekly">Weekly Challenges</a>
+                  <a href="#leaderboards">Leaderboards</a>
+                </div>
+              </div>
+            </li>
+            <li><a href="#">Shop merch</a></li>
+            <li><a href="#contact">Get Started</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  <!-- 💪 GYM PROGRAMS SECTION -->
+   <main>
+<section class="programs-section">
+  <h2 class="section-title">Transform Your Body, Mind, and Movement</h2>
 
-  <!-- Programs Section -->
-  <section class="programs">
-    <h2>Our Signature Programs</h2>
-    <div class="program-grid">
-      <div class="program-item" data-program="strength">
-        <h3>Strength in Movement</h3>
-        <p>Exercise + Skill</p>
-      </div>
-      <div class="program-item" data-program="identity">
-        <h3>Reshaping Your Identity</h3>
-        <p>Exercise + Nutrition</p>
-      </div>
-      <div class="program-item coming-soon" data-program="regen">
-        <h3>Regenerating Movement</h3>
-        <p>Mobility + Rehab<br><em>Coming Soon...</em></p>
-      </div>
+  <!-- Program 1 -->
+  <div class="program fade-in">
+    <div class="program-text">
+      <h3>Strength in Movement</h3>
+      <p class="subtext">Exercise + Skill</p>
+      <p class="description">
+        Master control, coordination, and functional power. Build strength that moves with purpose.
+      </p>
+      <button class="cta-btn">Purchase</button>
     </div>
-  </section>
-
-  <!-- Modal -->
-  <div class="modal" id="program-modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2 id="modal-title"></h2>
-      <p id="modal-text"></p>
-      <a href="#" class="btn-primary">Learn More</a>
+    <div class="program-image">
+      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Strength Training">
     </div>
   </div>
 
-  <footer class="footer">
-    <p>&copy; 2025 BRG. All rights reserved.</p>
-  </footer>
+  <!-- Program 2 -->
+  <div class="program reverse fade-in">
+    <div class="program-text">
+      <h3>Reshaping Your Identity</h3>
+      <p class="subtext">Exercise + Nutrition</p>
+      <p class="description">
+        Redefine yourself inside and out — transform through discipline, nutrition, and mindset.
+      </p>
+      <button class="cta-btn">Purchase</button>
+    </div>
+    <div class="program-image">
+      <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Nutrition and Exercise">
+    </div>
+  </div>
 
-  <script src="/JS/programs.js"></script>
-</body>
+  <!-- Program 3 -->
+  <div class="program fade-in">
+    <div class="program-text">
+      <h3>Regenerating Movement</h3>
+      <p class="subtext">Mobility + Rehab</p>
+      <p class="description">
+        Restore balance and move freely again. Strengthen your joints, rebuild motion, and heal.
+      </p>
+      <button class="cta-btn">Purchase</button>
+    </div>
+    <div class="program-image">
+      <img src="./images/exercise3.jpg" alt="Rehabilitation">
+    </div>
+  </div>
+
+  <p class="coming-soon">Coming Soon...</p>
+</section>
+</main>
+
+
+
+
+  
+   
+    <footer>
+      <div class="footer-wrapper">
+        <div class="logo">
+          <img src="./images/logo3.png" alt="" />
+        </div>
+        <div class="text">
+          <p>&copy;2025 BRG.All righs reserved.</p>
+        </div>
+        <div class="socials">
+          <a href=""><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2D6A4F"
+                d="M7.03.084c-1.277.06-2.149.264-2.91.563a5.9 5.9 0 0 0-2.124 1.388a5.9 5.9 0 0 0-1.38 2.127C.321 4.926.12 5.8.064 7.076s-.069 1.688-.063 4.947s.021 3.667.083 4.947c.061 1.277.264 2.149.563 2.911c.308.789.72 1.457 1.388 2.123a5.9 5.9 0 0 0 2.129 1.38c.763.295 1.636.496 2.913.552c1.278.056 1.689.069 4.947.063s3.668-.021 4.947-.082c1.28-.06 2.147-.265 2.91-.563a5.9 5.9 0 0 0 2.123-1.388a5.9 5.9 0 0 0 1.38-2.129c.295-.763.496-1.636.551-2.912c.056-1.28.07-1.69.063-4.948c-.006-3.258-.02-3.667-.081-4.947c-.06-1.28-.264-2.148-.564-2.911a5.9 5.9 0 0 0-1.387-2.123a5.9 5.9 0 0 0-2.128-1.38c-.764-.294-1.636-.496-2.914-.55C15.647.009 15.236-.006 11.977 0S8.31.021 7.03.084m.14 21.693c-1.17-.05-1.805-.245-2.228-.408a3.7 3.7 0 0 1-1.382-.895a3.7 3.7 0 0 1-.9-1.378c-.165-.423-.363-1.058-.417-2.228c-.06-1.264-.072-1.644-.08-4.848c-.006-3.204.006-3.583.061-4.848c.05-1.169.246-1.805.408-2.228c.216-.561.477-.96.895-1.382a3.7 3.7 0 0 1 1.379-.9c.423-.165 1.057-.361 2.227-.417c1.265-.06 1.644-.072 4.848-.08c3.203-.006 3.583.006 4.85.062c1.168.05 1.804.244 2.227.408c.56.216.96.475 1.382.895s.681.817.9 1.378c.165.422.362 1.056.417 2.227c.06 1.265.074 1.645.08 4.848c.005 3.203-.006 3.583-.061 4.848c-.051 1.17-.245 1.805-.408 2.23c-.216.56-.477.96-.896 1.38a3.7 3.7 0 0 1-1.378.9c-.422.165-1.058.362-2.226.418c-1.266.06-1.645.072-4.85.079s-3.582-.006-4.848-.06m9.783-16.192a1.44 1.44 0 1 0 1.437-1.442a1.44 1.44 0 0 0-1.437 1.442M5.839 12.012a6.161 6.161 0 1 0 12.323-.024a6.162 6.162 0 0 0-12.323.024M8 12.008A4 4 0 1 1 12.008 16A4 4 0 0 1 8 12.008"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2D6A4F"
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#2D6A4F"
+                d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
 </html>

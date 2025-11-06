@@ -191,7 +191,7 @@ header .header-wrapper {
 }
 
 .hamburger:hover {
-  transform: rotate(90deg);
+  transform: rotate(360deg);
 }
 
 /* Hero Section */
@@ -309,6 +309,7 @@ header .header-wrapper {
   margin-top: 5rem;
   padding: 0 20px;
   animation: fadeIn 0.8s ease-out;
+    background: #1b1b1b !important;
 }
 
 /* Section Layout */
@@ -318,6 +319,7 @@ header .header-wrapper {
   padding: 40px 20px;
   text-align: center;
   color: #fff;
+
 }
 
 .section-title {

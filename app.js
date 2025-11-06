@@ -1,5 +1,6 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-menu');
+// optional elements may not exist on every page (programs.html doesn't include the hero/typewriter or get-started form)
 const form = document.querySelector(".get-started-form");
 let currentSlide = 0;
 const totalSlides = 4;
@@ -40,15 +41,18 @@ const dotsContainer = document.getElementById('dotsContainer');
 //     updateCarousel();
 // }
 
-// hamburger onclick code
+// hamburger onclick code (guarded in case element is missing)
+if (hamburger && navMenu) {
   hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('show');
-      });
+  });
+}
 
 
 
 // code for typewritter effect
-  const points = [
+// guard the typewriter element in case this page does not include it
+const points = [
   " Corrective joint rehabilitation for older adults and those in recovery",
   " Functional training for limitless strength endurance",
   " Body recomposition and nutrition strategies for lasting health"
@@ -59,6 +63,7 @@ let charIndex = 0;
 const typewriterEl = document.getElementById("typewriter");
 
 function typeEffect() {
+  if (!typewriterEl) return; // nothing to do on pages without a typewriter element
   if (charIndex < points[index].length) {
     typewriterEl.textContent += points[index].charAt(charIndex);
     charIndex++;
@@ -84,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+if (form) {
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const formData = new FormData(form);
@@ -101,4 +107,5 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Oops! Something went wrong. Please try again.");
     }
   });
+}
 
