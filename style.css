@@ -1204,3 +1204,78 @@ header .header-wrapper {
     padding: 15px;
   }
 }
+
+.section-anchor {
+  display: block;
+  position: relative;
+  top: -120px;
+  visibility: hidden;
+}
+
+.bmi-tracker {
+  background: var(--background);
+  max-width: 700px;
+  margin: 2rem auto 4rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.bmi-tracker h2 {
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.bmi-tracker p {
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.bmi-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.bmi-form .form-row {
+  text-align: left;
+}
+
+.bmi-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.bmi-form input {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+.bmi-form input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.bmi-feedback {
+  min-height: 1.2rem;
+  color: #b00020;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.bmi-result {
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #ececec;
+}
+
+.bmi-result p {
+  margin: 0.4rem 0;
+}
