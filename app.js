@@ -109,3 +109,41 @@ if (form) {
   });
 }
 
+
+
+const bmiForm = document.getElementById("bmi-form");
+const heightInput = document.getElementById("height");
+const weightInput = document.getElementById("weight");
+const bmiValue = document.getElementById("bmi-value");
+const bmiCategory = document.getElementById("bmi-category");
+const bmiFeedback = document.getElementById("bmi-feedback");
+
+function getBmiCategory(bmi) {
+  if (bmi < 18.5) return "Underweight";
+  if (bmi < 25) return "Normal";
+  if (bmi < 30) return "Overweight";
+  return "Obese";
+}
+
+if (bmiForm && heightInput && weightInput && bmiValue && bmiCategory && bmiFeedback) {
+  bmiForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const height = Number(heightInput.value);
+    const weight = Number(weightInput.value);
+
+    if (!height || !weight || height <= 0 || weight <= 0) {
+      bmiFeedback.textContent = "Please enter valid positive values for both height and weight.";
+      bmiValue.textContent = "--";
+      bmiCategory.textContent = "--";
+      return;
+    }
+
+    const bmi = weight / (height * height);
+    const category = getBmiCategory(bmi);
+
+    bmiFeedback.textContent = "";
+    bmiValue.textContent = bmi.toFixed(1);
+    bmiCategory.textContent = category;
+  });
+}
